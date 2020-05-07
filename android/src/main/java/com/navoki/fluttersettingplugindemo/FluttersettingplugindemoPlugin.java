@@ -54,7 +54,7 @@ public class FluttersettingplugindemoPlugin implements FlutterPlugin, MethodCall
         mContext.startActivity(intent);
       }
 
-      result.success("Android " + android.os.Build.VERSION.RELEASE);
+      result.success(true);
     } else {
       result.notImplemented();
     }

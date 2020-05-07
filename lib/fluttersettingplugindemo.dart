@@ -6,8 +6,8 @@ class Fluttersettingplugindemo {
   static const MethodChannel _channel =
       const MethodChannel('fluttersettingplugindemo');
 
-  static Future<String> openPage(String pageName) async {
-    final String version = await _channel.invokeMethod('openPage',pageName);
-    return version;
+  static Future<bool> openPage(String pageName) async {
+    final bool result = await _channel.invokeMethod('openPage',pageName);
+    return result;
   }
 }
