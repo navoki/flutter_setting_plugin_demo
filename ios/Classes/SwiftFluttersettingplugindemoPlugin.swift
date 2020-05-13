@@ -9,6 +9,22 @@ public class SwiftFluttersettingplugindemoPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    result("iOS " + UIDevice.current.systemVersion)
+    
+    if(call.method=="openPage"){
+        
+        let args=call.arguments as? String
+        
+        if(args=="SETTING"){
+            
+            UIApplication.shared.openURL(URL(string: "App-Prefs:root=General")!)
+        }
+        
+        result(true)
+    }
+    else{
+        result(false)
+    }
+    
+    
   }
 }

@@ -1,8 +1,8 @@
 name: fluttersettingplugindemo
-description: A new Flutter plugin.
-version: 0.0.1
-author:
-homepage:
+description: To open platfom's setting page
+version: 1.0.0
+repository: https://github.com/navoki/flutter_setting_plugin_demo
+homepage: https://navoki.com
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
